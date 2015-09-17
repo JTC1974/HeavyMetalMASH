@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+
+  <title>Heavy Metal MASH</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1 class="logo"><img src="metalmash.png" /></h1>
+  <p class="description">Fill in the blanks and become a heavy metal hero!</p>
+
+<form action="" method="post" id="mash">
+
+  <div id="answers" class="hide">
+      <p>Your band is <span id="band"></span>. You tour in a <span id="vehicle"></span>, play the <span id="instrument"></span>, and own a <span id="home"></span>.
+  </div>
+
+  <div class="bucket">
+  
+    <div class="choice-bucket">
+      <h4 class="highlight">Name a heavy metal band.</h4>
+        <input name="band[]" type="text">
+        <input name="band[]" type="text">
+        <input name="band[]" type="text">
+        <input name="band[]" type="text">
+      </div>
+      
+      <div class="choice-bucket">
+        <h4 class="highlight">What instrument do you play?</h4>
+          <input name="instrument[]" type="text">
+          <input name="instrument[]" type="text">
+          <input name="instrument[]" type="text">
+          <input name="instrument[]" type="text">
+      </div>
+      
+     <div class="choice-bucket">
+        <h4 class="highlight">What vehicle will you tour in?</h4>
+          <input name="vehicle[]" type="text">
+          <input name="vehicle[]" type="text">
+          <input name="vehicle[]" type="text">
+          <input name="vehicle[]" type="text">
+      </div>
+
+  </div>
+
+  <input type="submit" value="Will I be awesome?">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
